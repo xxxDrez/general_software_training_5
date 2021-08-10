@@ -1,40 +1,40 @@
 
-const isArray = (obj) => {
+function isArray(obj){
     return Array.isArray(obj);
 };
 
-const isDate = (obj) => {
+function isDate(obj){
     var isValid = obj.split(' To ').every(function(s) {
         return moment(s,'D MMM YYYY').isValid();
     });
     return isValid;
 };
 
-const isNumber = (obj) => {
+function isNumber(obj){
     return Number.isInteger(obj);
 };
 
-const isString = (obj) => {
+function isString(obj){
     return typeof obj === 'string';
 };
 
-const isFunction = (obj) => {
+function isFunction(obj){
     return typeof obj === 'function';
 };
 
-const isBoole = (obj) => {
+function isBoole(obj){
     return typeof obj === 'boolean';
 }
 
-const isUndefined = (obj) => {
+function isUndefined(obj){
     return typeof(obj) === 'undefined';
 }
 
-const isNull = (obj) => {
+function isNull(obj){
     return typeof(obj) === 'object'
 }
 
-const deepEqual = (firstObj, secondObj) => {
+function deepEqual(firstObj, secondObj){
     if (firstObj === secondObj) {
       return true;
     } else if (isObject(firstObj) && isObject(secondObj)) {
@@ -47,7 +47,7 @@ const deepEqual = (firstObj, secondObj) => {
       return true;
     }
 
-    const isObject = (obj) => {
+    function isObject(obj){
       if (typeof obj === "object" && obj != null) {
         return true;
       } else {
