@@ -7,3 +7,11 @@ console.log(isBoole(true));
 console.log(isUndefined(undefined));
 console.log(isNull(null));
 console.log(deepEqual(Object,Object));
+
+
+var Sam = new Developer('Sam', 'Winchester', 'Front-End');
+var Din = new Developer('Din', 'Winchester', 'Back-End');
+
+console.log(Sam === Din);
+console.log(Sam);
+console.log(Din);

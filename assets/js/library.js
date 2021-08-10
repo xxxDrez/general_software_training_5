@@ -54,6 +54,19 @@ function deepEqual(firstObj, secondObj) {
         return false;
       }
     }
-  }
+}
+
+class Developer{
+    constructor(firstName,lastName,technology){
+        if(Developer.exists){
+            return Developer.instance;
+        }
+        Developer.instance = this;
+        Developer.exists = true;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.technology = technology;
+    }
+}
 
 
