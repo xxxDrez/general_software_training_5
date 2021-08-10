@@ -15,3 +15,9 @@ var Din = new Developer('Din', 'Winchester', 'Back-End');
 console.log(Sam === Din);
 console.log(Sam);
 console.log(Din);
+
+console.log(sum(2,3));
+console.log(sum(2,3));
+console.log(sum(2,3));
+console.log(sum(1,5));
+console.log(sum(1,5));

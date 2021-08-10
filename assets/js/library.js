@@ -69,4 +69,21 @@ class Developer{
     }
 }
 
+const memo = (fn) => {
+    const cache = {};
+    return (...args) => {
+        if(args[0] in cache){
+            console.log("returned cached value");
+            return cache[args[0]];
+        }
+        console.log("returned computed value")
+        return cache[args[0]] = fn(...args);
+    };
+};
+
+const sum = memo((a,b) => {
+    result = a + b;
+    return result;
+});
+
 
