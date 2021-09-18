@@ -1,23 +1,21 @@
-console.log(isArray(['1','2','3']));
-console.log(isDate('1 May 2010'));
-console.log(isNumber(1));
-console.log(isString('Test'));
-console.log(isFunction(function(){}));
-console.log(isBoole(true));
-console.log(isUndefined(undefined));
-console.log(isNull(null));
-console.log(deepEqual(Object,Object));
 
-
-var Sam = new Developer('Sam', 'Winchester', 'Front-End');
-var Din = new Developer('Din', 'Winchester', 'Back-End');
-
+console.log(module.isNaN(NaN));
+console.log(module.isArray(['1','2','3']));
+console.log(module.isDate(new Date));
+console.log(module.isNumber(1.2));
+console.log(module.isString('Hello World'));
+console.log(module.isFunction(function(){}));
+console.log(module.isBoole(true));
+console.log(module.isUndefined(undefined));
+console.log(module.isNull(null));
+console.log(module.deepEqual(Object,Object));
+var Sam = new module.Developer('Sam', 'Winchester', 'Front-End');
+var Din = new module.Developer('Din', 'Winchester', 'Back-End');
 console.log(Sam === Din);
 console.log(Sam);
 console.log(Din);
-
-console.log(sum(2,3));
-console.log(sum(2,3));
-console.log(sum(2,3));
-console.log(sum(1,5));
-console.log(sum(1,5));
+console.log(module.sum(2,3));
+console.log(module.sum(2,3));
+console.log(module.sum(2,3));
+console.log(module.sum(2,5));
+console.log(module.sum(2,5));
