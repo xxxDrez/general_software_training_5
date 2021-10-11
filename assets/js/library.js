@@ -16,7 +16,7 @@ var module = (function(){
                 console.log("returned cached value");
                 return cache[args[0] + '-' + args[1]];
             }
-            console.log("returned computed value")
+            console.log("returned computed value");
             return cache[args[0] + '-' + args[1]] = fn(...args);
         };
     };
