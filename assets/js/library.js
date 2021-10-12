@@ -32,8 +32,7 @@ var module = (function(){
             return typeof obj === 'number';
         },
         isNaN: function(obj){
-            if(obj !== obj) return true;
-            else return false;
+            return Object.is(obj,NaN);
         },
         isString: function(obj){
             return typeof obj === 'string';
